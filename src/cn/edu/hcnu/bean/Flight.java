@@ -1,4 +1,6 @@
-public class flight {
+package cn.edu.hcnu.bean;
+
+public class Flight {
     private String id;
     private String departure;  //乘客出发地
     private String destinaction;  //乘客到达地
