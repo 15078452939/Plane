@@ -1,11 +1,13 @@
 package cn.edu.hcnu.bean;
 
 public class Flight {
-    private String id;
-    private String departure;  //乘客出发地
-    private String destinaction;  //乘客到达地
-    private String planetype;
-    private String departuretime;
+    private String id;  //主键, UUID
+    private String flightId;  //
+    private String planeType;  //机型
+    private int currentSeatsNum;  //座位号
+    private String departureAirPort;  //乘客出发地
+    private String destinationAirPort;  //乘客到达地
+    private String departureTime;
 
     public String getId() {
         return id;
@@ -15,36 +17,52 @@ public class Flight {
         this.id = id;
     }
 
-    public String getDeparture() {
-        return departure;
+    public String getFlightId() {
+        return flightId;
     }
 
-    public void setDeparture(String departure) {
-        this.departure = departure;
+    public void setFlightId(String flightId) {
+        this.flightId = flightId;
     }
 
-    public String getDestinaction() {
-        return destinaction;
+    public String getPlaneType() {
+        return planeType;
     }
 
-    public void setDestinaction(String destinaction) {
-        this.destinaction = destinaction;
+    public void setPlaneType(String planeType) {
+        this.planeType = planeType;
     }
 
-    public String getPlanetype() {
-        return planetype;
+    public int getCurrentSeatsNum() {
+        return currentSeatsNum;
     }
 
-    public void setPlanetype(String planetype) {
-        this.planetype = planetype;
+    public void setCurrentSeatsNum(int currentSeatsNum) {
+        this.currentSeatsNum = currentSeatsNum;
     }
 
-    public String getDeparturetime() {
-        return departuretime;
+    public String getDepartureAirPort() {
+        return departureAirPort;
     }
 
-    public void setDeparturetime(String departuretime) {
-        this.departuretime = departuretime;
+    public void setDepartureAirPort(String departureAirPort) {
+        this.departureAirPort = departureAirPort;
+    }
+
+    public String getDestinationAirPort() {
+        return destinationAirPort;
+    }
+
+    public void setDestinationAirPort(String destinationAirPort) {
+        this.destinationAirPort = destinationAirPort;
+    }
+
+    public String getDepartureTime() {
+        return departureTime;
+    }
+
+    public void setDepartureTime(String departureTime) {
+        this.departureTime = departureTime;
     }
 }
 
